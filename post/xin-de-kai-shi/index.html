@@ -1,113 +1,144 @@
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
-<meta name="description" content="" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>新的开始 | 吴万强的博客</title>
+    <meta charset="utf-8" >
+
+<title>新的开始 | 原点的博客</title>
+<meta name="description" content="记录，但不限于生活、心情、学习。始于2018年9月18日。">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
 <link rel="shortcut icon" href="m.ruifree.top/favicon.ico">
 <link rel="stylesheet" href="m.ruifree.top/styles/main.css">
 
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 
   </head>
   <body>
-    <div class="main">
-      <div class="main-content">
-        <div class="site-header">
-  <a href="m.ruifree.top">
-  <img class="avatar" src="m.ruifree.top/images/avatar.png" alt="" width="80px" height="80px">
-  </a>
-  <h1 class="site-title">
-    吴万强的博客
-  </h1>
-  <p class="site-description">
-    记录，但不限于生活、心情、学习。始于2018年9月18日。
-  </p>
-  <div class="menu-container">
-    
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="m.ruifree.top">
+        <img src="m.ruifree.top/images/avatar.png" class="site-logo">
+        <h1 class="site-title">原点的博客</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
       
-        <a href="m.ruifree.top" class="menu">
-          首页
-        </a>
+        
+          <a href="m.ruifree.top" class="site-nav">
+            首页
+          </a>
+        
       
-    
+        
+          <a href="m.ruifree.top/archives" class="site-nav">
+            归档
+          </a>
+        
       
-        <a href="m.ruifree.top/archives" class="menu">
-          归档
-        </a>
+        
+          <a href="m.ruifree.top/tags" class="site-nav">
+            标签
+          </a>
+        
       
-    
+        
+          <a href="m.ruifree.top/post/about-me" class="site-nav">
+            关于
+          </a>
+        
       
-        <a href="m.ruifree.top/tags" class="menu">
-          标签
-        </a>
+        
+          <a href="https://github.com/ruifree" class="site-nav" target="_blank">
+            My Github
+          </a>
+        
       
-    
+        
+          <a href="https://music.ruifree.top" class="site-nav" target="_blank">
+            YD在线音乐
+          </a>
+        
       
-        <a href="m.ruifree.top/post/about-me" class="menu">
-          关于
-        </a>
+        
+          <a href="https://n.ruifree.top" class="site-nav" target="_blank">
+            原点导航
+          </a>
+        
       
-    
-      
-        <a href="https://github.com/ruifree" class="menu" target="_blank">
-          My Github
-        </a>
-      
-    
-      
-        <a href="https://music.ruifree.top" class="menu" target="_blank">
-          YD在线音乐
-        </a>
-      
-    
-      
-        <a href="https://n.ruifree.top" class="menu" target="_blank">
-          原点导航
-        </a>
-      
-    
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="site-description">
+      记录，但不限于生活、心情、学习。始于2018年9月18日。
+    </div>
+    <div class="site-footer">
+      Powered by WuWanqiang
+    </div>
   </div>
 </div>
 
-      
-        <div class="post-detail">
-          <article class="post">
-            <h2 class="post-title">
-              新的开始
-            </h2>
-            <div class="post-info">
-              <time class="post-time">
-                · 2018-09-18 ·
-              </time>
-              
-                <a href="m.ruifree.top/tag/qQKWx8CaB" class="post-tags">
-                  # 记录生活
-                </a>
-              
-            </div>
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">新的开始</h2>
+            <div class="post-date">2018-09-18</div>
+            
             <div class="post-content">
               <p>开学五天了，来到新的地方，从陌生变得一点点熟悉。即将正式开始的研究生生涯，依然很陌生，前路不明的我，内心很迷茫。</p>
 
             </div>
-          </article>
+            
+              <div class="tag-container">
+                
+                  <a href="m.ruifree.top/tag/qQKWx8CaB" class="tag">
+                    记录生活
+                  </a>
+                
+              </div>
+            
+            
+
+            
+
+          </div>
+
         </div>
-    
-        
-
-        
-    
-        <div class="site-footer">
-  Powered by WuWanqiang
-</div>
-
-<script>
-  hljs.initHighlightingOnLoad()
-</script>
-
       </div>
     </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script type="application/javascript">
+
+AOS.init();
+
+hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
   </body>
 </html>

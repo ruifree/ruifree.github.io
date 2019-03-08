@@ -1,122 +1,153 @@
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
-<meta name="description" content="" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" >
+
 <title>今天有点赶 | 吴万强的博客</title>
+<meta name="description" content="记录，但不限于生活、心情、学习。始于2018年9月18日。">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
 <link rel="shortcut icon" href="ruifree.github.io/favicon.ico">
 <link rel="stylesheet" href="ruifree.github.io/styles/main.css">
 
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 
   </head>
   <body>
-    <div class="main">
-      <div class="main-content">
-        <div class="site-header">
-  <a href="ruifree.github.io">
-  <img class="avatar" src="ruifree.github.io/images/avatar.png" alt="" width="80px" height="80px">
-  </a>
-  <h1 class="site-title">
-    吴万强的博客
-  </h1>
-  <p class="site-description">
-    记录，但不限于生活、心情、学习。始于2018年9月18日。
-  </p>
-  <div class="menu-container">
-    
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="ruifree.github.io">
+        <img src="ruifree.github.io/images/avatar.png" class="site-logo">
+        <h1 class="site-title">吴万强的博客</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
       
-        <a href="m.ruifree.top" class="menu">
-          首页
-        </a>
+        
+          <a href="m.ruifree.top" class="site-nav">
+            首页
+          </a>
+        
       
-    
+        
+          <a href="m.ruifree.top/archives" class="site-nav">
+            归档
+          </a>
+        
       
-        <a href="m.ruifree.top/archives" class="menu">
-          归档
-        </a>
+        
+          <a href="m.ruifree.top/tags" class="site-nav">
+            标签
+          </a>
+        
       
-    
+        
+          <a href="m.ruifree.top/post/about-me/" class="site-nav">
+            关于
+          </a>
+        
       
-        <a href="m.ruifree.top/tags" class="menu">
-          标签
-        </a>
+        
+          <a href="https://github.com/ruifree/" class="site-nav" target="_blank">
+            My Github
+          </a>
+        
       
-    
+        
+          <a href="https://music.ruifree.top/" class="site-nav" target="_blank">
+            YD在线音乐
+          </a>
+        
       
-        <a href="m.ruifree.top/post/about-me/" class="menu">
-          关于
-        </a>
+        
+          <a href="https://n.ruifree.top/" class="site-nav" target="_blank">
+            原点导航
+          </a>
+        
       
-    
-      
-        <a href="https://github.com/ruifree/" class="menu" target="_blank">
-          My Github
-        </a>
-      
-    
-      
-        <a href="https://music.ruifree.top/" class="menu" target="_blank">
-          YD在线音乐
-        </a>
-      
-    
-      
-        <a href="https://n.ruifree.top/" class="menu" target="_blank">
-          原点导航
-        </a>
-      
-    
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="site-description">
+      记录，但不限于生活、心情、学习。始于2018年9月18日。
+    </div>
+    <div class="site-footer">
+      Powered by WuWanqiang
+    </div>
   </div>
 </div>
 
-      
-        <div class="post-detail">
-          <article class="post">
-            <h2 class="post-title">
-              今天有点赶
-            </h2>
-            <div class="post-info">
-              <time class="post-time">
-                · 2018-09-20 ·
-              </time>
-              
-                <a href="ruifree.github.io/tag/qQKWx8CaB" class="post-tags">
-                  # 记录生活
-                </a>
-              
-            </div>
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">今天有点赶</h2>
+            <div class="post-date">2018-09-20</div>
+            
             <div class="post-content">
               <p>一天过得很快，解决了不少事情，也做了一些事情。早上老早起床洗刷跑到建行去办卡，结果c城人民生活节奏慢是真的感受到了，本来九点上班，结果九点一二十了银行才开始陆陆续续办业务，一心想着办卡不用排队好吧遇上了没卡，我的运气真是绝了。办完卡已经十点了，想着导师还要十点跟我们见面第一次就迟到真的不好。匆匆赶回去，刚好导师也刚到还没有开始会谈，真是万幸。导师跟我们几个同学聊了一个多小时，告诉了我们在哪里查资料，也告诉了我们研究的方向。开学个把星期以来终于明白了研究方向，银行卡也解决了，算是了却了两桩烦心事。</p>
 
             </div>
-          </article>
+            
+              <div class="tag-container">
+                
+                  <a href="ruifree.github.io/tag/qQKWx8CaB" class="tag">
+                    记录生活
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="ruifree.github.io/post/yan-jiu-sheng-de-xue-xi-huan-shi-chu-hu-yi-liao">
+                  <h3 class="post-title">
+                    研究生的学习还是出乎意料
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
+
         </div>
-    
-        
-          <div class="next-post">
-            <div class="next">下一篇</div>
-            <a href="ruifree.github.io/post/yan-jiu-sheng-de-xue-xi-huan-shi-chu-hu-yi-liao">
-              <h3 class="post-title">
-                研究生的学习还是出乎意料
-              </h3>
-            </a>
-          </div>  
-        
-
-        
-    
-        <div class="site-footer">
-  Powered by WuWanqiang
-</div>
-
-<script>
-  hljs.initHighlightingOnLoad()
-</script>
-
       </div>
     </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script type="application/javascript">
+
+AOS.init();
+
+hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
   </body>
 </html>

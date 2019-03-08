@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>关于我 | 吴万强的博客</title>
+<meta name="description" content=" 记录，但不限于生活、心情、学习。始于2018年9月18日。">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="shortcut icon" href="m.ruifree.top/favicon.ico">
+<link rel="stylesheet" href="m.ruifree.top/styles/main.css">
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="m.ruifree.top">
+        <img src="m.ruifree.top/images/avatar.png" class="site-logo">
+        <h1 class="site-title">吴万强的博客</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="m.ruifree.top" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="m.ruifree.top/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="m.ruifree.top/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="m.ruifree.top/post/about-me/" class="site-nav">
+            关于
+          </a>
+        
+      
+        
+          <a href="https://github.com/ruifree/" class="site-nav" target="_blank">
+            My Github
+          </a>
+        
+      
+        
+          <a href="https://music.ruifree.top/" class="site-nav" target="_blank">
+            YD在线音乐
+          </a>
+        
+      
+        
+          <a href="https://n.ruifree.top/" class="site-nav" target="_blank">
+            原点导航
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="site-description">
+       记录，但不限于生活、心情、学习。始于2018年9月18日。
+    </div>
+    <div class="site-footer">
+      Powered by WuWanqiang
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">关于我</h2>
+            <div class="post-date">2018-07-14</div>
+            
+            <div class="post-content">
+              <p>我叫吴万强，懵懂的青年；<br>喜欢胡思乱想，喜欢摆弄新鲜的事物；<br>生活有很多的乐趣需要去发现；记录生活，让生活永远不虚度。<br>**感谢EryouHao开源的博客工具  <a href="http://hvenotes.fehey.com/">Hve Notes</a>  ，很好用。</p>
+
+            </div>
+            
+            
+
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script type="application/javascript">
+
+AOS.init();
+
+hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+  </body>
+</html>

@@ -99,6 +99,7 @@
             
             <div class="post-content">
               <p>在进行FPGA设计时，经常要对rom模块进行初始化。Vivado ISE或Quartus II软件本身具备的初始化功能对于较小的rom是行之有效的，但面对大容量的rom时就显得捉襟见肘了。而matlab作为一神器，在这时就有了用武之地。使用它生成.coe或.mif文件，可以起到事半功倍的效果。</p>
+<!-- more -->
 <h3 id="1-了解coe文件的格式">1、了解.coe文件的格式</h3>
 <p>在ISE中，对rom进行初始化的文件是.coe文件。它的格式如下：<br>
 memory_initialization_radix=10; --&gt;文件存储数据的进制，10即为10进制<br>

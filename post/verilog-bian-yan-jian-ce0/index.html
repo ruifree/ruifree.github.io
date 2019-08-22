@@ -100,6 +100,7 @@
             <div class="post-content">
               <p>//边沿检测电路<br>
 //方法一：打一拍后，看前后是否相反</p>
+<!-- more -->
 <pre><code>always@(posedge clk or negedge rst_n)begin
 	if(!rst_n) begin
 		a_ff0 &lt;= 1'b0;

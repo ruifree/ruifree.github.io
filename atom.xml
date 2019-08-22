@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://m.ruifree.top</id>
     <title>WuWanQiang&apos;s Blog</title>
-    <updated>2019-08-22T06:15:27.250Z</updated>
+    <updated>2019-08-22T06:23:39.125Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://m.ruifree.top"/>
     <link rel="self" href="https://m.ruifree.top/atom.xml"/>
@@ -16,8 +16,12 @@
         <link href="https://m.ruifree.top/post/verilog-bian-yan-jian-ce0">
         </link>
         <updated>2019-07-26T04:44:10.000Z</updated>
+        <summary type="html"><![CDATA[<p>//边沿检测电路<br>
+//方法一：打一拍后，看前后是否相反</p>
+]]></summary>
         <content type="html"><![CDATA[<p>//边沿检测电路<br>
 //方法一：打一拍后，看前后是否相反</p>
+<!-- more -->
 <pre><code>always@(posedge clk or negedge rst_n)begin
 	if(!rst_n) begin
 		a_ff0 &lt;= 1'b0;
@@ -63,13 +67,18 @@ assign pedge = ({buf2,buf1}==2'b01)?1'b0:1'b1;
         <link href="https://m.ruifree.top/post/2019040601">
         </link>
         <updated>2019-04-06T14:07:15.000Z</updated>
-        <content type="html"><![CDATA[<p>转载： <a href="https://www.cnblogs.com/byilrq/p/6040461.html">点此查看原文</a></p>
-<h3 id="1什么是同步逻辑和异步逻辑汉王">1：什么是同步逻辑和异步逻辑？（汉王）</h3>
+        <summary type="html"><![CDATA[<h3 id="1什么是同步逻辑和异步逻辑汉王">1：什么是同步逻辑和异步逻辑？（汉王）</h3>
 <blockquote>
-<p>同步逻辑是时钟之间有固定的因果关系。异步逻辑是各时钟之间没有固定的因果关系。 答案应该与上面问题一致<br>
-〔补充〕：同步时序逻辑电路的特点：各触发器的时钟端全部连接在一起，并接在系统时钟端，只有当时钟脉冲到来时，电路的状态才能改变。改变后的状态将一直保持到下一个时钟脉冲的到来，此时无论外部输入 x 有无变化，状态表中的每个状态都是稳定的。<br>
-异步时序逻辑电路的特点：电路中除可以使用带时钟的触发器外，还可以使用不带时钟的触发器和延迟元件作为存储元件，电路中没有统一的时钟，电路状态的改变由外部输入的变化直接引起。</p>
+<p>同步逻辑是时钟之间有固定的因果关系。异步逻辑是各时钟之间没有固定的因果关系。 答案应该与上面问题一致</p>
 </blockquote>
+]]></summary>
+        <content type="html"><![CDATA[<h3 id="1什么是同步逻辑和异步逻辑汉王">1：什么是同步逻辑和异步逻辑？（汉王）</h3>
+<blockquote>
+<p>同步逻辑是时钟之间有固定的因果关系。异步逻辑是各时钟之间没有固定的因果关系。 答案应该与上面问题一致</p>
+</blockquote>
+<!-- more -->
+<p>〔补充〕：同步时序逻辑电路的特点：各触发器的时钟端全部连接在一起，并接在系统时钟端，只有当时钟脉冲到来时，电路的状态才能改变。改变后的状态将一直保持到下一个时钟脉冲的到来，此时无论外部输入 x 有无变化，状态表中的每个状态都是稳定的。<br>
+异步时序逻辑电路的特点：电路中除可以使用带时钟的触发器外，还可以使用不带时钟的触发器和延迟元件作为存储元件，电路中没有统一的时钟，电路状态的改变由外部输入的变化直接引起。</p>
 <h3 id="2同步电路和异步电路的区别">2：同步电路和异步电路的区别：</h3>
 <blockquote>
 <p>同步电路：存储电路中所有触发器的时钟输入端都接同一个时钟脉冲源，因而所有触发器的状态的变化都与所加的时钟脉冲信号同步。<br>
@@ -638,6 +647,7 @@ end Behavioral;
 </blockquote>
 <h3 id="69现有一用户需要一种集成电路产品要求该产品能够实现如下功能ylnx其中x为4位二进制整数输入信号-y为二进制小数输出要求保留两位小数-电源电压为3~5v假设公司接到该项目后交由我们来负责该产品的设计试讨论该产品的设计全程-仕兰微电子">69：现有一用户需要一种集成电路产品，要求该产品能够实现如下功能：y=lnx，其中，x为4位二进制整数输入信号。y为二进制小数输出，要求保留两位小数。电源电压为3~5v假设公司接到该项目后，交由我们来负责该产品的设计，试讨论该产品的设计全程。（仕兰微电子）</h3>
 <h3 id="70iirfir滤波器的异同">70：iir，fir滤波器的异同</h3>
+<p>转载： <a href="https://www.cnblogs.com/byilrq/p/6040461.html">点此查看原文</a></p>
 ]]></content>
     </entry>
     <entry>
@@ -646,14 +656,22 @@ end Behavioral;
         <link href="https://m.ruifree.top/post/hu-yan-lu-hslrgb-zhi">
         </link>
         <updated>2019-04-05T12:27:10.000Z</updated>
+        <summary type="html"><![CDATA[<h3 id="护眼绿hslrgb值">护眼绿HSL/RGB值</h3>
+<p>在平常使用电脑的过程中，如果可以设置背景颜色建议按照下面的值设置，护眼绿色对可眼睛更好一些。</p>
+<ul>
+<li>H:126 S:12 L:91</li>
+<li>R:204 G:232 B:207</li>
+</ul>
+]]></summary>
         <content type="html"><![CDATA[<h3 id="护眼绿hslrgb值">护眼绿HSL/RGB值</h3>
 <p>在平常使用电脑的过程中，如果可以设置背景颜色建议按照下面的值设置，护眼绿色对可眼睛更好一些。</p>
 <ul>
 <li>H:126 S:12 L:91</li>
-<li>R:204 G:232 B:207<br>
-<img src="https://m.ruifree.top/post-images/1554467405399.png" alt=""><br>
-<img src="https://m.ruifree.top/post-images/1554467423641.png" alt=""></li>
+<li>R:204 G:232 B:207</li>
 </ul>
+<!-- more -->
+<p><img src="https://m.ruifree.top/post-images/1554467405399.png" alt=""><br>
+<img src="https://m.ruifree.top/post-images/1554467423641.png" alt=""></p>
 ]]></content>
     </entry>
     <entry>
@@ -662,7 +680,10 @@ end Behavioral;
         <link href="https://m.ruifree.top/post/2019033101">
         </link>
         <updated>2019-03-31T08:11:53.000Z</updated>
+        <summary type="html"><![CDATA[<p>在进行FPGA设计时，经常要对rom模块进行初始化。Vivado ISE或Quartus II软件本身具备的初始化功能对于较小的rom是行之有效的，但面对大容量的rom时就显得捉襟见肘了。而matlab作为一神器，在这时就有了用武之地。使用它生成.coe或.mif文件，可以起到事半功倍的效果。</p>
+]]></summary>
         <content type="html"><![CDATA[<p>在进行FPGA设计时，经常要对rom模块进行初始化。Vivado ISE或Quartus II软件本身具备的初始化功能对于较小的rom是行之有效的，但面对大容量的rom时就显得捉襟见肘了。而matlab作为一神器，在这时就有了用武之地。使用它生成.coe或.mif文件，可以起到事半功倍的效果。</p>
+<!-- more -->
 <h3 id="1-了解coe文件的格式">1、了解.coe文件的格式</h3>
 <p>在ISE中，对rom进行初始化的文件是.coe文件。它的格式如下：<br>
 memory_initialization_radix=10; --&gt;文件存储数据的进制，10即为10进制<br>
@@ -725,6 +746,14 @@ memory_initialization_vector=
         <link href="https://m.ruifree.top/post/2019033002">
         </link>
         <updated>2019-03-30T08:12:23.000Z</updated>
+        <summary type="html"><![CDATA[<h3 id="1系统分析和指标的确定">（1）系统分析和指标的确定。</h3>
+<h3 id="2系统划分">（2）系统划分：</h3>
+<ul>
+<li>顶级模块；</li>
+<li>模块大小估计；</li>
+<li>预布局。</li>
+</ul>
+]]></summary>
         <content type="html"><![CDATA[<h3 id="1系统分析和指标的确定">（1）系统分析和指标的确定。</h3>
 <h3 id="2系统划分">（2）系统划分：</h3>
 <ul>
@@ -732,6 +761,7 @@ memory_initialization_vector=
 <li>模块大小估计；</li>
 <li>预布局。</li>
 </ul>
+<!-- more -->
 <h3 id="3模块级设计即对每一模块">（3）模块级设计，即对每一模块：</h3>
 <ul>
 <li>写RTL级Verilog；</li>
@@ -767,8 +797,13 @@ memory_initialization_vector=
         <link href="https://m.ruifree.top/post/2019030301">
         </link>
         <updated>2019-03-30T08:03:06.000Z</updated>
+        <summary type="html"><![CDATA[<p>1、有功功率</p>
+<p>在交流电路中，凡是消耗在电阻元件上、功率不可逆转换的那部分功率（如转变为热能、光能或机械能）称为有功功率，简称“有功”， 用“P”表示，单位是瓦（W）或千瓦（KW）。</p>
+]]></summary>
         <content type="html"><![CDATA[<p>1、有功功率</p>
 <p>在交流电路中，凡是消耗在电阻元件上、功率不可逆转换的那部分功率（如转变为热能、光能或机械能）称为有功功率，简称“有功”， 用“P”表示，单位是瓦（W）或千瓦（KW）。</p>
+<!-- more -->
+<p></p>
 <p>它反映了交流电源在电阻元件上做功的能力大小，或单位时间内转变为其它能量形式的电能数值。</p>
 <p>实际上它是交流电在一个周期内瞬时功率的平均值，故又称平均功率。它的大小等于瞬时功率最大值的1/2，就是等于电阻元件两端电压有效值与通过电阻元件中电流有效值的乘积。</p>
 <p>2、无功功率</p>
@@ -809,7 +844,10 @@ memory_initialization_vector=
         <link href="https://m.ruifree.top/post/sheng-huo-xu-yao-yong-xin">
         </link>
         <updated>2018-12-14T13:23:38.000Z</updated>
+        <summary type="html"><![CDATA[<p>你需要强大，但是你也要懂得生活的乐趣。很多事情很简单，但是越简单的事情越要做好，不要让你在乎的、在乎你的人失望。</p>
+]]></summary>
         <content type="html"><![CDATA[<p>你需要强大，但是你也要懂得生活的乐趣。很多事情很简单，但是越简单的事情越要做好，不要让你在乎的、在乎你的人失望。</p>
+<!-- more -->
 ]]></content>
     </entry>
 </feed>

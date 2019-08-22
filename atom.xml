@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://m.ruifree.top</id>
     <title>WuWanQiang&apos;s Blog</title>
-    <updated>2019-08-22T06:11:08.405Z</updated>
+    <updated>2019-08-22T06:15:27.250Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://m.ruifree.top"/>
     <link rel="self" href="https://m.ruifree.top/atom.xml"/>
@@ -782,7 +782,7 @@ memory_initialization_vector=
 <p>视在功率即不等于有功功率，又不等于无功功率，但它既包括有功功率，又包括无功功率。能否使视在功率100KVA的变压器输出100KW的有功功率，主要取决于负载的功率因数。</p>
 <p>4、功率三角形</p>
 <p>视在功率（S）、有功功率（P）及无功功率（Q）之间的关系，可以用功率三角形来表示，如下图所示。它是一个直角三角形，两直角边分别为Q与P，斜边为S。S与P之间的夹角Ф为功率因数角，它反映了该交流电路中电压与电流之间的相位差（角）。<br>
-<img src="https://ws1.sinaimg.cn/large/84414befgy1g68ez3ucbgj211c0a9mxw.jpg" alt="PGS"><br>
+<img src="https://ws1.sinaimg.cn/large/84414befgy1g68ez3ucbgj211c0a9mxw.jpg" alt=""><br>
 电压与电流之间的相位差(Φ)的余弦叫做功率因数，用符号cosΦ表示，在数值上，功率因数是有功功率和视在功率的比值，即cosΦ=P/S 。</p>
 ]]></content>
     </entry>

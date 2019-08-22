@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://m.ruifree.top</id>
+    <title>WuWanQiang&apos;s Blog</title>
+    <updated>2019-08-22T04:48:25.740Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://m.ruifree.top"/>
+    <link rel="self" href="https://m.ruifree.top/atom.xml"/>
+    <subtitle>记录，但不限于生活、心情、学习。始于2018年9月18日。</subtitle>
+    <logo>https://m.ruifree.top/images/avatar.png</logo>
+    <icon>https://m.ruifree.top/favicon.ico</icon>
+    <rights>All rights reserved 2019, WuWanQiang&apos;s Blog</rights>
+    <entry>
+        <title type="html"><![CDATA[护眼绿HSL/RGB值]]></title>
+        <id>https://m.ruifree.top/post/hu-yan-lu-hslrgb-zhi</id>
+        <link href="https://m.ruifree.top/post/hu-yan-lu-hslrgb-zhi">
+        </link>
+        <updated>2019-04-05T12:27:10.000Z</updated>
+        <content type="html"><![CDATA[<h3 id="护眼绿hslrgb值">护眼绿HSL/RGB值</h3>
+<p>在平常使用电脑的过程中，如果可以设置背景颜色建议按照下面的值设置，护眼绿色对可眼睛更好一些。</p>
+<ul>
+<li>H:126 S:12 L:91</li>
+<li>R:204 G:232 B:207<br>
+<img src="https://m.ruifree.top/post-images/1554467405399.png" alt=""><br>
+<img src="https://m.ruifree.top/post-images/1554467423641.png" alt=""></li>
+</ul>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[serv-u在线的本地管理网址]]></title>
+        <id>https://m.ruifree.top/post/serv-u-zai-xian-de-ben-di-guan-li-wang-zhi</id>
+        <link href="https://m.ruifree.top/post/serv-u-zai-xian-de-ben-di-guan-li-wang-zhi">
+        </link>
+        <updated>2019-03-12T07:13:10.000Z</updated>
+        <summary type="html"><![CDATA[<p>serv-u在线的本地管理网址，无需打开软件，在浏览器中即可快速登录、打开serv-u的控制台！<br>
+快速！方便！</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>serv-u在线的本地管理网址，无需打开软件，在浏览器中即可快速登录、打开serv-u的控制台！<br>
+快速！方便！</p>
+<!-- more -->
+<blockquote>
+<p>http://127.0.0.1:43958/?Session=137259&amp;Language=zh,CN&amp;LocalAdmin=1&amp;Sync=1336616</p>
+</blockquote>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[生活需要用心]]></title>
+        <id>https://m.ruifree.top/post/sheng-huo-xu-yao-yong-xin</id>
+        <link href="https://m.ruifree.top/post/sheng-huo-xu-yao-yong-xin">
+        </link>
+        <updated>2018-12-14T13:23:38.000Z</updated>
+        <content type="html"><![CDATA[<p>你需要强大，但是你也要懂得生活的乐趣。很多事情很简单，但是越简单的事情越要做好，不要让你在乎的、在乎你的人失望。</p>
+]]></content>
+    </entry>
+</feed>

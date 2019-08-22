@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>护眼绿HSL/RGB值 | WuWanQiang&#39;s Blog</title>
+<title>Verilog —— 边沿检测 | WuWanQiang&#39;s Blog</title>
 <meta name="description" content="记录，但不限于生活、心情、学习。始于2018年9月18日。">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -94,25 +94,56 @@
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
           <div class="post-detail">
-            <h2 class="post-title">护眼绿HSL/RGB值</h2>
-            <div class="post-date">2019-04-05</div>
+            <h2 class="post-title">Verilog —— 边沿检测</h2>
+            <div class="post-date">2019-07-26</div>
             
             <div class="post-content">
-              <h3 id="护眼绿hslrgb值">护眼绿HSL/RGB值</h3>
-<p>在平常使用电脑的过程中，如果可以设置背景颜色建议按照下面的值设置，护眼绿色对可眼睛更好一些。</p>
-<ul>
-<li>H:126 S:12 L:91</li>
-<li>R:204 G:232 B:207<br>
-<img src="https://m.ruifree.top/post-images/1554467405399.png" alt=""><br>
-<img src="https://m.ruifree.top/post-images/1554467423641.png" alt=""></li>
-</ul>
+              <p>//边沿检测电路<br>
+//方法一：打一拍后，看前后是否相反</p>
+<pre><code>always@(posedge clk or negedge rst_n)begin
+	if(!rst_n) begin
+		a_ff0 &lt;= 1'b0;
+	end
+	else begin
+		a_ff0 &lt;= a;
+	end
+end
+always@(posedge clk or negedge rst_n)begin
+	if(!rst_n) begin
+		pedge &lt;= 1'b0;
+		nedge &lt;= 1'b0;
+	end
+	else if(a==1'b1&amp;&amp;a_ff0==1'b0) begin		
+		pedge &lt;= 1'b1;
+	end
+	else if(a==1'b0&amp;&amp;a_ff0==1'b1) begin
+		nedge &lt;= 1'b1;
+	end
+	else begin
+		pedge &lt;= 1'b0;
+		nedge &lt;= 1'b0;
+	end
+end
+</code></pre>
+<p>//方法二：打两拍后，看前后是否相反</p>
+<pre><code>always@(posedge clk or negedge rst_n)begin
+	if(!rst_n)begin
+		{buf2,buf1} &lt;= 2'b0;
+	end
+	else begin
+		{buf2,buf1} &lt;= {buf1,wr_en};
+	end
+end
+assign nedge = ({buf2,buf1}==2'b10)?1'b1:1'b0;
+assign pedge = ({buf2,buf1}==2'b01)?1'b0:1'b1;	
+</code></pre>
 
             </div>
             
               <div class="tag-container">
                 
-                  <a href="https://m.ruifree.top/tag/PaFgUUYDE" class="tag">
-                    技巧分享
+                  <a href="https://m.ruifree.top/tag/HHnLh71lp" class="tag">
+                    FPGA
                   </a>
                 
               </div>
@@ -120,9 +151,9 @@
             
               <div class="next-post">
                 <div class="next">下一篇</div>
-                <a href="https://m.ruifree.top/post/2019033101">
+                <a href="https://m.ruifree.top/post/2019040601">
                   <h3 class="post-title">
-                    使用matlab生成rom初始化文件.coe
+                    常见数字IC设计、FPGA工程师面试题
                   </h3>
                 </a>
               </div>

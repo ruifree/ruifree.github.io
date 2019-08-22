@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>无功功率、有功功率、视在功率相互关系 | WuWanQiang&#39;s Blog</title>
+<meta name="description" content="记录，但不限于生活、心情、学习。始于2018年9月18日。">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="shortcut icon" href="https://m.ruifree.top/favicon.ico">
+<link rel="stylesheet" href="https://m.ruifree.top/styles/main.css">
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://m.ruifree.top">
+        <img src="https://m.ruifree.top/images/avatar.png" class="site-logo">
+        <h1 class="site-title">WuWanQiang&#39;s Blog</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="https://m.ruifree.top" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="https://m.ruifree.top/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="https://m.ruifree.top/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="https://m.ruifree.top/post/about-me" class="site-nav">
+            关于
+          </a>
+        
+      
+        
+          <a href="https://github.com/ruifree" class="site-nav" target="_blank">
+            My Github
+          </a>
+        
+      
+        
+          <a href="https://music.ruifree.top" class="site-nav" target="_blank">
+            YD在线音乐
+          </a>
+        
+      
+        
+          <a href="https://n.ruifree.top" class="site-nav" target="_blank">
+            原点导航
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="site-description">
+      记录，但不限于生活、心情、学习。始于2018年9月18日。
+    </div>
+    <div class="site-footer">
+      Powered by WuWanqiang
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">无功功率、有功功率、视在功率相互关系</h2>
+            <div class="post-date">2019-03-30</div>
+            
+              <div class="feature-container" style="background-image: url('https://wx2.sinaimg.cn/large/84414befgy1g68ez3ucbgj211c0a9mxw.jpg')">
+              </div>
+            
+            <div class="post-content">
+              <p>1、有功功率</p>
+<p>在交流电路中，凡是消耗在电阻元件上、功率不可逆转换的那部分功率（如转变为热能、光能或机械能）称为有功功率，简称“有功”， 用“P”表示，单位是瓦（W）或千瓦（KW）。</p>
+<p>它反映了交流电源在电阻元件上做功的能力大小，或单位时间内转变为其它能量形式的电能数值。</p>
+<p>实际上它是交流电在一个周期内瞬时功率的平均值，故又称平均功率。它的大小等于瞬时功率最大值的1/2，就是等于电阻元件两端电压有效值与通过电阻元件中电流有效值的乘积。</p>
+<p>2、无功功率</p>
+<p>为了反映以下事实并加以表示，将电感或电容元件与交流电源往复交换的功率称之为无功功率。</p>
+<p>简称“无功”，用“Q”表示。单位是乏（Var）或千乏(KVar)。 在交流电路中，凡是具有电感性或电容性的元件，在通电后便会建立起电感线圈的磁场或电容器极板间的电场。因此，在交流电每个周期内的上半部分（瞬时功率为正值）时间内，它们将会从电源吸收能量用建立磁场或电场；而下半部分（瞬时功率为负值）的时间内，其建立的磁场或电场能量又返回电源。因此，在整个周期内这种功率的平均值等于零。就是说，电源的能量与磁场能量或电场能量在进行着可逆的能量转换，而并不消耗功率。</p>
+<p>无功功率是交流电路中由于电抗性元件（指纯电感或纯电容）的存在，而进行可逆性转换的那部分电功率，它表达了交流电源能量与磁场或电场能量交换的最大速率。</p>
+<p>实际工作中，凡是有线圈和铁芯的感性负载，它们在工作时建立磁场所消耗的功率即为无功功率。如果没有无功功率，电动机和变压器就不能建立工作磁场。</p>
+<p>3、视在功率</p>
+<p>交流电源所能提供的总功率，称之为视在功率或表现功率，在数值上是交流电路中电压与电流的乘积。 <br>
+视在功率用S表示。单位为伏安（VA）或千伏安（KVA）。 它通常用来表示交流电源设备（如变压器）的容量大小。</p>
+<p>视在功率即不等于有功功率，又不等于无功功率，但它既包括有功功率，又包括无功功率。能否使视在功率100KVA的变压器输出100KW的有功功率，主要取决于负载的功率因数。</p>
+<p>4、功率三角形</p>
+<p>视在功率（S）、有功功率（P）及无功功率（Q）之间的关系，可以用功率三角形来表示，如下图所示。它是一个直角三角形，两直角边分别为Q与P，斜边为S。S与P之间的夹角Ф为功率因数角，它反映了该交流电路中电压与电流之间的相位差（角）。<br>
+<img src="https://ws1.sinaimg.cn/large/84414befgy1g68ez3ucbgj211c0a9mxw.jpg" alt="PGS"><br>
+电压与电流之间的相位差(Φ)的余弦叫做功率因数，用符号cosΦ表示，在数值上，功率因数是有功功率和视在功率的比值，即cosΦ=P/S 。</p>
+
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://m.ruifree.top/tag/PaFgUUYDE" class="tag">
+                    技巧分享
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://m.ruifree.top/post/serv-u-zai-xian-de-ben-di-guan-li-wang-zhi">
+                  <h3 class="post-title">
+                    serv-u在线的本地管理网址
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script type="application/javascript">
+
+AOS.init();
+
+hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+  </body>
+</html>

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>护眼绿HSL/RGB值 | WuWanQiang&#39;s Blog</title>
+<title>Verilog和综合工具设计ASIC或者复杂FPGA的基本流程 | WuWanQiang&#39;s Blog</title>
 <meta name="description" content="记录，但不限于生活、心情、学习。始于2018年9月18日。">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -94,25 +94,51 @@
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
           <div class="post-detail">
-            <h2 class="post-title">护眼绿HSL/RGB值</h2>
-            <div class="post-date">2019-04-05</div>
+            <h2 class="post-title">Verilog和综合工具设计ASIC或者复杂FPGA的基本流程</h2>
+            <div class="post-date">2019-03-30</div>
             
             <div class="post-content">
-              <h3 id="护眼绿hslrgb值">护眼绿HSL/RGB值</h3>
-<p>在平常使用电脑的过程中，如果可以设置背景颜色建议按照下面的值设置，护眼绿色对可眼睛更好一些。</p>
+              <h3 id="1系统分析和指标的确定">（1）系统分析和指标的确定。</h3>
+<h3 id="2系统划分">（2）系统划分：</h3>
 <ul>
-<li>H:126 S:12 L:91</li>
-<li>R:204 G:232 B:207<br>
-<img src="https://m.ruifree.top/post-images/1554467405399.png" alt=""><br>
-<img src="https://m.ruifree.top/post-images/1554467423641.png" alt=""></li>
+<li>顶级模块；</li>
+<li>模块大小估计；</li>
+<li>预布局。</li>
 </ul>
+<h3 id="3模块级设计即对每一模块">（3）模块级设计，即对每一模块：</h3>
+<ul>
+<li>写RTL级Verilog；</li>
+<li>综合代码检查；</li>
+<li>写Verilog测试文件；</li>
+<li>Verilog仿真；</li>
+<li>写综合约束、边界条件和层次；</li>
+<li>预综合以分析门的数量和延时。</li>
+</ul>
+<h3 id="4芯片综合">（4）芯片综合：</h3>
+<ul>
+<li>写Verilog测试文件；</li>
+<li>Verilog仿真；</li>
+<li>综合；</li>
+<li>门级仿真。</li>
+</ul>
+<h3 id="5测试">（5）测试：</h3>
+<ul>
+<li>修改门级网表以便进行测试；</li>
+<li>产生测试矢量；</li>
+<li>对可测试网表进行仿真。</li>
+</ul>
+<h3 id="6布局布线以使设计的逻辑电路能放入芯片">（6）布局布线以使设计的逻辑电路能放入芯片。</h3>
+<h3 id="7布局布线后仿真-故障覆盖仿真和定时分析">（7）布局布线后仿真、故障覆盖仿真和定时分析。</h3>
+<blockquote>
+<p>【参考文献】夏宇闻. Verilog数字系统设计教程（第3版）</p>
+</blockquote>
 
             </div>
             
               <div class="tag-container">
                 
-                  <a href="https://m.ruifree.top/tag/PaFgUUYDE" class="tag">
-                    技巧分享
+                  <a href="https://m.ruifree.top/tag/HHnLh71lp" class="tag">
+                    FPGA
                   </a>
                 
               </div>
@@ -120,9 +146,9 @@
             
               <div class="next-post">
                 <div class="next">下一篇</div>
-                <a href="https://m.ruifree.top/post/2019033101">
+                <a href="https://m.ruifree.top/post/2019030301">
                   <h3 class="post-title">
-                    使用matlab生成rom初始化文件.coe
+                    无功功率、有功功率、视在功率相互关系
                   </h3>
                 </a>
               </div>

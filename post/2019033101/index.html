@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>护眼绿HSL/RGB值 | WuWanQiang&#39;s Blog</title>
+<title>使用matlab生成rom初始化文件.coe | WuWanQiang&#39;s Blog</title>
 <meta name="description" content="记录，但不限于生活、心情、学习。始于2018年9月18日。">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -94,25 +94,72 @@
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
           <div class="post-detail">
-            <h2 class="post-title">护眼绿HSL/RGB值</h2>
-            <div class="post-date">2019-04-05</div>
+            <h2 class="post-title">使用matlab生成rom初始化文件.coe</h2>
+            <div class="post-date">2019-03-31</div>
             
             <div class="post-content">
-              <h3 id="护眼绿hslrgb值">护眼绿HSL/RGB值</h3>
-<p>在平常使用电脑的过程中，如果可以设置背景颜色建议按照下面的值设置，护眼绿色对可眼睛更好一些。</p>
+              <p>在进行FPGA设计时，经常要对rom模块进行初始化。Vivado ISE或Quartus II软件本身具备的初始化功能对于较小的rom是行之有效的，但面对大容量的rom时就显得捉襟见肘了。而matlab作为一神器，在这时就有了用武之地。使用它生成.coe或.mif文件，可以起到事半功倍的效果。</p>
+<h3 id="1-了解coe文件的格式">1、了解.coe文件的格式</h3>
+<p>在ISE中，对rom进行初始化的文件是.coe文件。它的格式如下：<br>
+memory_initialization_radix=10; --&gt;文件存储数据的进制，10即为10进制<br>
+memory_initialization_vector = --&gt;数据向量<br>
+0,402,804,1206,1608,2009,2411,2811,3212, --&gt;所存储的10进制数据，每个数据使用逗号隔开，最后分号结束</p>
+<p><strong>.coe文件的前两行的开头格式是固定的，不能改变的。</strong></p>
+<pre><code>memory_initialization_radix=10;	//10表示&lt;10进制&gt;
+memory_initialization_vector=
+…
+…
+</code></pre>
+<p><strong>所存储的数据数量与大小，是与设计rom的位宽和深度相对应的。</strong></p>
+<h3 id="2-使用matlab生成coe文件">2、使用matlab生成.coe文件</h3>
+<h4 id="21-以下程序用于为位宽为16bit深度为1024的rom生成初始化文件">2.1 以下程序用于为位宽为16bit，深度为1024的rom生成初始化文件</h4>
+<pre><code class="language-c">n  = 16;%量化位数
+f  = 5e4; %信号频率Hz
+fs = 25600000; %采样频率Hz
+N  = 1024; %本次共采样点数
+t  = (0:N-1)/fs; %采样时间s
+x  = sin(2*pi*f*t); %信号采样值
+y  = x*(2^(n-1)); %量化
+y_z= round(y); %四舍五入取整
+    
+%生成y.coe文件
+fid=fopen('E:\matlab-function\y.coe','w'); %创建y.coe文件
+fprintf(fid,'%d,\n',y_z) %向y.coe中写入数据
+fclose(fid); %关闭y.coe文件
+</code></pre>
+<h4 id="22-编辑coe文件最好使用ultraedit打开">2.2 编辑.coe文件（最好使用UltraEdit打开）</h4>
 <ul>
-<li>H:126 S:12 L:91</li>
-<li>R:204 G:232 B:207<br>
-<img src="https://m.ruifree.top/post-images/1554467405399.png" alt=""><br>
-<img src="https://m.ruifree.top/post-images/1554467423641.png" alt=""></li>
+<li>在前两行添加</li>
 </ul>
+<pre><code>memory_initialization_radix=10;
+memory_initialization_vector =
+</code></pre>
+<ul>
+<li>将最后的逗号改为分号</li>
+<li>最后文件格式：</li>
+</ul>
+<pre><code>memory_initialization_radix= 10;
+memory_initialization_vector=
+ 0,
+402,
+804,
+1206,
+1608,
+...
+...
+-2009,
+-1608,
+-1206,
+-804,
+-402;
+</code></pre>
 
             </div>
             
               <div class="tag-container">
                 
-                  <a href="https://m.ruifree.top/tag/PaFgUUYDE" class="tag">
-                    技巧分享
+                  <a href="https://m.ruifree.top/tag/HHnLh71lp" class="tag">
+                    FPGA
                   </a>
                 
               </div>
@@ -120,9 +167,9 @@
             
               <div class="next-post">
                 <div class="next">下一篇</div>
-                <a href="https://m.ruifree.top/post/2019033101">
+                <a href="https://m.ruifree.top/post/2019033002">
                   <h3 class="post-title">
-                    使用matlab生成rom初始化文件.coe
+                    Verilog和综合工具设计ASIC或者复杂FPGA的基本流程
                   </h3>
                 </a>
               </div>
